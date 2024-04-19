@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.convergence-regular {
+    font-family: "Convergence", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .kaisei-harunoumi-regular {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.column{
+    float:left;
+    flex-basis:33.33%;
+    width:33.33%;
+    padding: 12px 12px
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.back-color-baige{
+    background-color: #F9ECCD;
+}
+.background-color-green{
+    background-color: #7B8751;
+}
+  
+  .aligned {
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding-bottom:10px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.border-radius{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px lightgray;
+    background-color: #CCD5AE;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav a{
+    padding: 0 16px;
+    color:black;
+    text-decoration: none;
+    font-family: "Convergence", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav img{
+    min-width: 75px;
+}
+
+.h-menu{
+    display:none;
+    border: none;
+    background-color: transparent;
+}
+.menu-img{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+.h-menu:hover {
+    cursor:pointer;
+}
+
+.material-symbols-outline {
+    font-size: 30px !important;
+}
+
+.res-button{
+    background-color:#FEFAE0;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Convergence", sans-serif;
+    cursor:pointer;
+    box-shadow: 0 0 5px lightgray;
+    font-size: 25px;
+    display:inline-block;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
+
+.contain{
+    position: relative;
+  }
+
+.body-container{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+.menu-head{
+    text-align: center;
+    font-family: "Kaisei HarunoUmi", serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 45px;
+    border-radius: 10px;
+}
+
+
+.body-copy{
+    font-size: 14px;
+    font-family: "Convergence", sans-serif;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.food-header{
+    font-family: "Kaisei HarunoUmi", serif;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+.second-copy{
+    font-size: 18px;
+    text-align: justify;
+    font-family: "Convergence", sans-serif;
+}
+.info-header{
+    font-size: 50px;
+    text-align: center;
+    }
+
+.overlay-text {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        color: black; 
+        padding: 10px 20px; 
+        font-size: 30px; 
+        text-align: center;
+    }
+
+ .image-container{
+    position: relative;
+    background-image: url("../images /background images  /CTA Background Image.jpg");
+    background-size: cover;
+    min-height: 400px;
+}
+
+.image-container img {
+    display: block;
+   
+}
+.footer{
+    background-color: #7B8751;
+    color:white;
+    text-align:center;
+}
+
+
+.wrapper{
+    max-width:1000px;
+    margin:0 auto;
+}
+.content{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}
+.orange-box{
+    flex: 2 0 0;
+    background:#DFA25E;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.col-6 {
+    padding: 0 10px;
+    flex-basis: 50%;
+  }
+  .col-6-text {
+    padding: 0 10px;
+    flex-basis: 50%;
+    background-color:#DFA25E;
+    
+  }
+  .col-6-2text {
+    padding: 0 10px;
+    flex-basis: 50%;
+    background-color:#E1E7D0;
+    
+  }
+.socials{
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+
+
+
+@media (max-width: 400px) {
+    img{
+        max-width:100%;
+        height:auto;
+    }
+    .nav-links{
+        display: none;
+    }
+    .h-menu{
+        display: inline-block;
+    }
+    .nav{
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+    .col-6 {
+        flex-basis: 100%;
+      }
+    .col-6-text{
+        flex-basis: 100%;
+        flex-wrap:wrap;
+    }
+    .content{
+        flex-wrap:wrap;
+    }
+}
